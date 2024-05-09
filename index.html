@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Password Generator</title>
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        
+        <!-- end Google fonts -->
+        <div class="content">
+            <div class="password-instructions">
+                <h1 id="line-one">
+                    Generate a
+                </h1>
+                   
+                </h1>
+                <h1 id="line-two">
+                    random password
+                </h1>
+                <h3>between 3 to 20 characters</h3>
+                <p class="paragraph">Never use an insecure password again.</p>
+            </div>
+            <div class="new-password">
+                <button id="button-el" class="btn" onclick="generate()">New passwords 🔑 </button>
+
+            </div>
+            <div class="password-buttons">
+                <input id="length-el" type="text">
+                <button class="btn btn-add" onclick="addLength()">+</button>
+                <button class="btn btn-minus" onclick="subtractLength()">-</button>
+            </div>
+            <div class="type-passwords">
+                <label for="characters" class='radio'>Characters 🈳</label>
+                <input type="radio"  class='radio' id="characters" value="characters" name="set" value="characters" onclick="setCharacters()" checked>
+                
+                
+                <label for="numbers" class='radio'>Numbers  🔢</label>
+                <input type="radio" class='radio' id="numbers" value="numbers" name="set" value="numbers" onclick="setNumbers()">
+                
+                
+                <label for="letters" class='radio'>Letters 🔠</label>
+                <input type="radio"  class='radio' id="letters" value="letters" name="set" value="letters" onclick="setLetters()">
+                
+
+                <label for="symbols" class='radio'>Symbols 🔣</label>
+                <input type="radio" class='radio' id="symbols" value="symbols" name="set" value="symbols" onclick="setsymbols()">
+                
+            </div>
+
+            <div id="message-el">characters (default)</div>
+
+            
+            <div class="underline"></div>
+            <div id="password-copied-message-el">click a password to copy</div>
+            <div class="generated-passwords">
+                <input type="text" id="password1-el" class="password" 
+                placeholder="passwords will be" onclick="copyPassWord1()">
+
+                <input type="text" id="password2-el" class="password"
+                placeholder="generated here" onclick="copyPassWord2()"">
+            </div>
+
+        </div>
+        <script src="index.js"></script>
+    </head>
+<body>
+    
+</body>
+</html>

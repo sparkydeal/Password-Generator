@@ -1,0 +1,86 @@
+
+/* resets */
+body,h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+
+}
+.content {
+    margin: 50px 20px;
+    padding: 20px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.content, .password-instructions {
+    display: flex;
+    flex-direction: column;
+    
+    
+    row-gap: 20px;
+}
+
+.password-buttons, .type-passwords, .generated-passwords {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    column-gap: 10px;
+
+}
+#line-two {
+    color: rgb(34, 174, 34);
+}
+.paragraph {
+    color: rgba(209, 204, 204, 0.541);
+}
+#length-el {
+    width: 25px;
+}
+#messages {
+    color: rgba(209, 204, 204, 0.541);
+    
+}
+#instruction-to-copy-el {
+    color: rgba(209, 204, 204, 0.541);
+}
+.underline {
+    border-bottom: 2px solid rgba(209, 204, 204, 0.541);
+}
+.btn, input, .radio, #length-el {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(34, 174, 34);
+    color: white;
+    padding: 5px 10px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+input, #length-el {
+    background-color: #273549ff;
+    color:rgb(34, 174, 34);
+    text-align: center;
+}
+#button-el {
+    padding: 20px;
+}
+.radio:hover, .btn:hover {
+    background-color: white;
+    color: rgb(34, 174, 34);
+}
+.password {
+    font-size: x-large;
+}
+.password {
+    font-size: large;
+    color: white;
+
+}
